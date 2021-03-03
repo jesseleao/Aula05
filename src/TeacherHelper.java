@@ -9,7 +9,7 @@ public class TeacherHelper {
 		int opcao=0, numeroAulas, qtdeAlunos, i;
 		double salarioBase, horaAtividade, descansoSemanalRemunerado, salario, notaAluno, mediaAlunos, horaAula;
 		
-		Random gerador = new Random();
+		Random gerador = new Random(); // Criando um gerador de numeros pseudoaleatórios
 		
 		Scanner leitor = new Scanner(System.in);
 		
@@ -19,6 +19,7 @@ public class TeacherHelper {
 			System.out.println("1 - Calcular salário");
 			System.out.println("2 - Calcular média de notas dos alunos");
 			System.out.println("3 - Exibir a motivação do dia!");
+			System.out.println("4 - Sair do programa!");
 			opcao = leitor.nextInt();
 			
 			switch (opcao) {
@@ -60,6 +61,9 @@ public class TeacherHelper {
 			case 3:
 				
 				switch(gerador.nextInt(7)) {
+				case 0:
+					System.out.println("Seus alunos da imersão acham que você tem a altura do Darth Vader");
+					break;
 				case 1:
 					System.out.println("Você é um professor incrível!");
 					break;
